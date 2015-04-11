@@ -1,0 +1,2231 @@
+/*************FONT FACE**************************************/
+@font-face{
+  font-family: museo100;
+  src:url("../Fonts/Museo/Museo100-Regular.otf");
+}
+@font-face{ font-family: museo300;
+  src:url("../Fonts/Museo/Museo300-Regular.otf");
+}
+@font-face{ font-family: museo500;
+  src:url("../Fonts/Museo/Museo500-Regular.otf");
+}
+@font-face{
+  font-family: museo700;
+  src:url("../Fonts/Museo/Museo700-Regular.otf");
+}
+@font-face{
+  font-family: museo900;
+  src:url("../Fonts/Museo/Museo900-Regular.otf");
+}
+@font-face{
+  font-family: museo_sans900;
+  src:url("../Fonts/Museo Sans/exljbris - MuseoSans-900.otf");
+}
+@font-face{
+  font-family: museo_sans500;
+  src:url("../Fonts/Museo Sans/MuseoSans_500.otf");
+}
+@font-face{
+  font-family: opensans-regular;
+  src:url("../Fonts/Open Sans/OpenSans-Regular.ttf69") format('truetype');
+}
+@font-face{
+  font-family: opensans-Bold;
+  src:url("../Fonts/Open Sans/OpenSans-Bold.ttf") format('truetype');
+}
+@font-face{
+  font-family: opensans-BoldItalic;
+  src:url("../Fonts/Open Sans/OpenSans-BoldItalic.ttf") format('truetype');
+}
+@font-face{
+  font-family: OpenSans-ExtraBold;
+  src:url("../Fonts/Open Sans/OOpenSans-ExtraBold.ttf") format('truetype');
+}
+@font-face{
+  font-family: OpenSans-ExtraBoldItalic;
+  src:url("../Fonts/Open Sans/OpenSans-ExtraBoldItalic.ttf") format('truetype');
+}
+@font-face{
+  font-family: OpenSans-Italic;
+  src:url("../Fonts/Open Sans/OpenSans-Italic.ttf") format('truetype');
+}
+@font-face{
+  font-family: OpenSans-Light;
+  src:url("../Fonts/Open Sans/OpenSans-Light.ttf") format('truetype');
+}
+@font-face{
+  font-family: OpenSans-LightItalic;
+  src:url("../Fonts/Open Sans/OpenSans-LightItalic.ttf") format('truetype');
+}
+@font-face{
+  font-family: OpenSans-Semibold;
+  src:url("../Fonts/Open Sans/OpenSans-Semibold.ttf") format('truetype');
+}
+@font-face{
+  font-family: OpenSans-SemiboldItalic;
+  src:url("../Fonts/Open Sans/OpenSans-SemiboldItalic.ttf") format('truetype'); 
+
+}
+/******** Primary style***************/
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  /* etc */}
+  p{
+    margin: 0;
+    padding: 0;
+  }
+  header, nav, footer, div, form {
+    display: block;
+  }
+
+
+/***************HTML5 display********************/
+
+
+body{
+  -ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;
+overflow: scroll;
+overflow-x:hidden; 
+line-height: 1;
+}
+
+
+
+/****************************************Nav bar****************************************/
+/****************************************Nav bar****************************************/
+.header{
+  height: 60px!important;
+}
+.logo{
+margin: 19px 0 0 20px;
+/* height: 9%; */
+width: 80px;
+}
+
+.menu {
+margin-top: -4.5em!important;
+width: 68px;
+cursor: pointer;
+z-index: 1000;
+position: absolute;
+-webkit-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-moz-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-ms-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-o-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
+-ms-transform: translate3d(0, 0, 0);
+-o-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+ /* height: 22%;*/
+}
+.menu-name h2{
+color: #0079dd;
+font-size: 0.7em;
+font-family: 'Open Sans', sans-serif;
+text-transform: uppercase;
+margin: 6px 0 0 0;
+
+}
+
+.cd-primary-nav-trigger {
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  cursor: pointer;
+}
+.nav {
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-o-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+backface-visibility: hidden;
+cursor: pointer;
+border: none;
+width: 93px;
+height: 65px;
+position: relative;
+right: 2%;
+
+}
+.nav .icon-container {
+width: 93px;
+position: absolute;
+top: 10px;
+right: 0;
+cursor: pointer;
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-o-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+.nav .line {
+position: absolute;
+left: 65px;
+right: 28px;
+height: 3px;
+background-color: #0079dd;
+-webkit-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-moz-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-ms-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-o-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
+-ms-transform: translate3d(0, 0, 0);
+-o-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+.active .nav .line {
+left: 28px;
+}
+.cd-primary-nav-trigger.nav .line01  {
+top: 0;
+opacity: 1;
+-webkit-transition-delay: 210ms;
+-moz-transition-delay: 210ms;
+-ms-transition-delay: 210ms;
+-o-transition-delay: 210ms;
+transition-delay: 210ms;
+position: relative;
+left: 70%;
+bottom: auto;
+right: auto;
+width: 27px;
+height: 3px;
+background-color: #0079dd;
+cursor: pointer;
+-webkit-transition: background-color 0.3s;
+-moz-transition: background-color 0.3s;
+transition: background-color 0.3s;
+transition-delay: 210ms;
+transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
+-ms-transform: translate3d(0, 0, 0);
+-o-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+
+.cd-primary-nav-trigger .nav .line02 {
+top: 7px;
+-webkit-transition-delay: 140ms;
+-moz-transition-delay: 140ms;
+-ms-transition-delay: 140ms;
+-o-transition-delay: 140ms;
+transition-delay: 140ms;
+}
+.cd-primary-nav-trigger .nav .line03 {
+top: 14px;
+-webkit-transition-delay: 70ms;
+-moz-transition-delay: 70ms;
+-ms-transition-delay: 70ms;
+-o-transition-delay: 70ms;
+transition-delay: 70ms;
+}
+.cd-primary-nav-trigger .nav .line04 {
+top: 21px;
+opacity: 0;
+-webkit-transition-delay: 0ms;
+-moz-transition-delay: 0ms;
+-ms-transition-delay: 0ms;
+-o-transition-delay: 0ms;
+transition-delay: 0ms;
+}
+.cd-primary-nav-trigger .nav:hover .line {
+-webkit-transform:translate3d(0,-7px,0);
+-moz-transform:translate3d(0,-7px,0);
+-ms-transform:translate3d(0,-7px,0);
+-o-transform:translate3d(0,-7px,0);
+transform:translate3d(0,-7px,0);
+}
+
+.cd-primary-nav-trigger .nav:hover .line01 {
+opacity:0;
+-webkit-transition-delay:0;
+-moz-transition-delay:0;
+-ms-transition-delay:0;
+-o-transition-delay:0;
+transition-delay:0;
+}
+
+.cd-primary-nav-trigger .nav:hover .line02 {
+-webkit-transition-delay:70ms;
+-moz-transition-delay:70ms;
+-ms-transition-delay:70ms;
+-o-transition-delay:70ms;
+transition-delay:70ms;
+}
+
+.cd-primary-nav-trigger.nav:hover .line03 {
+-webkit-transition-delay:140ms;
+-moz-transition-delay:140ms;
+-ms-transition-delay:140ms;
+-o-transition-delay:140ms;
+transition-delay:140ms;
+}
+
+.cd-primary-nav-trigger .nav:hover .line04 {
+opacity:1;
+-webkit-transition-delay:210ms;
+-moz-transition-delay:210ms;
+-ms-transition-delay:210ms;
+-o-transition-delay:210ms;
+transition-delay:210ms;
+}
+
+.cd-header {
+-webkit-transition: background-color 0.3s;
+ -moz-transition: background-color 0.3s;
+transition: background-color 0.3s;
+  /* Force Hardware Acceleration in WebKit */
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
+-ms-transform: translate3d(0, 0, 0);
+-o-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+  }
+.cd-header.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+position: fixed;
+top: -60px!important;
+background-color: #fff;
+opacity: 0.95;
+-webkit-transition: -webkit-transform 0.3s;
+-moz-transition: -moz-transform 0.3s;
+transition: transform 0.3s;
+  }
+ .cd-header.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+-webkit-transform: translate3d(0, 100%, 0);
+-moz-transform: translate3d(0, 100%, 0);
+-ms-transform: translate3d(0, 100%, 0);
+-o-transform: translate3d(0, 100%, 0);
+transform: translate3d(0, 100%, 0);
+  }
+
+  .cd-header.menu-is-open {
+    /* add a background color to the header when the navigation is open */
+background-color:  #002a67 solid;
+  }
+
+.navigation-wrapper {
+background: -webkit-linear-gradient(#002a67, #0079dd); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#002a67, #0079dd); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#002a67, #0079dd); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#002a67, #0079dd); /* Standard syntax */
+padding: 40px 0 0 0;
+position: fixed;
+overflow: hidden;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+display: none;
+}
+
+.navigation {
+  padding: 20px 5% 0 5%;
+  display: none;
+}
+.show-menu {
+  display: block;
+}
+
+
+.navigation li {
+  list-style: none;
+  margin: 50px 0;
+
+} 
+.navigation li.small-padding {
+  margin: 0;
+  }
+
+.navigation li a {
+  display: block;
+  padding: 10px 0 10px 1%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 150%;
+  letter-spacing: .1em;
+  border-left: 3px solid #fff;
+   -webkit-transition: .4s linear; 
+    -moz-transition: .4s linear; 
+    transition: .4s linear;
+  opacity: 0.95;
+  -moz-transition: all ease .3s;
+  -webkit-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+.navigation li a:hover {
+  color: #fff;
+  padding-left: 5%;
+  border-left: 3px solid #eee;
+}
+
+.cd-header {
+  
+  top: 0%!important;
+  left: 0;
+  width:100vw;
+  z-index: 2000;
+  box-shadow: 0 -11px 2px rgba(0, 0, 0, 0.3);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cd-primary-nav-trigger .icon-container.is-clicked {
+  background-color: transparent;
+
+}
+
+.icon-container.is-clicked .line03 , .icon-container.is-clicked .line01  {
+  background-color: #fff;
+  top:47px;
+  z-index: -1;
+  position: absolute;
+}
+
+    .cd-primary-nav-trigger {
+    width: 100px;
+    background-color: transparent;
+    height: 30px;
+    top: 80%;
+    left:90%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .cd-primary-nav-trigger .icon-container {
+    left: auto;
+    right: 0em;
+    -webkit-transform: translateX(0) translateY(-50%);
+    -moz-transform: translateX(0) translateY(-50%);
+    -ms-transform: translateX(0) translateY(-50%);
+    -o-transform: translateX(0) translateY(-50%);
+    transform: translateX(0) translateY(-50%);
+  }
+
+  .cd-primary-nav {
+  /* by default it's hidden - on top of the viewport */
+  position: fixed;
+  top: 0;
+  margin-left: 0px;
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(left,#00003b, #0079dd); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left,#00003b, #0079dd); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left,#00003b, #0079dd); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right,#00003b, #0079dd); /* Standard syntax */
+  z-index: 1000;
+  text-align: center;
+  padding: 50px 0;
+  opacity: .95;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.cd-primary-nav.is-visible{
+  -webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+-ms-transition: all 0.3s;
+-o-transition: all 0.3s;
+transition: all 0.3s;
+}
+.icon-container.is-clicked .line:nth-child(3) {
+   top: 31px;
+   height: 3px;
+   width: 22px;
+   opacity: 1;
+   position: absolute;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.icon-container.is-clicked .line:nth-child(1){
+   top: 31px;
+   height: 3px;
+   width: 22px;
+   opacity: 1;
+   position: absolute;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+.cd-primary-nav ul {
+  width: 100%;
+  left: 0;
+  margin: 2vw 0 0 0;
+}
+.cd-primary-nav li {
+  list-style-type: none;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-family: "museo_sans900";
+  font-weight: 500;
+  display: table;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 8px -17px;
+  width: 100vw;
+  vertical-align: middle;
+  
+  
+}
+.cd-primary-nav a {
+  color: #fff;
+ 
+ 
+}
+ .cd-primary-nav ul a:hover {
+  background-color: #fff;
+  width: 100vw!important;
+  color: #0079dd;
+  display: inline-block;
+}
+
+
+.cd-primary-nav.is-visible {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+@media only screen and (max-width: 667px){
+.menu-full{
+ margin-right: 12px;
+}
+
+.icon-container.is-clicked .line03 , .icon-container.is-clicked .line01  {
+  background-color: #fff;
+  top:47px;
+  z-index: -1;
+  position: absolute;
+}
+}
+
+/*.menu-name h2:hover{
+  color:#00003b;
+}*/
+
+@media only screen and (max-width: 768px){
+.menu-name h2 {
+    float: right;
+    margin: 27px -11 0 0 !important
+  }
+
+
+  .cd-header {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .cd-header.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -60px!important;
+    background-color: #fff;
+    opacity: 0.95;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+  .cd-header.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  .cd-header.menu-is-open {
+    /* add a background color to the header when the navigation is open */
+    background-color:  #002a67 solid;
+  }
+
+  .icon-container.is-clicked .line03 , .icon-container.is-clicked .line01  {
+  background-color: #fff;
+  top:47px;
+  z-index: -1;
+  position: absolute;
+
+}
+}
+@media only screen and (min-width: 769px) and (max-width: 1169px){
+
+
+
+  .cd-header {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .cd-header.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -60px!important;
+    background-color: #fff;
+    opacity: 0.95;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+  .cd-header.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  .cd-header.menu-is-open {
+    /* add a background color to the header when the navigation is open */
+    background-color:  #002a67 solid;
+
+  }
+  .icon-container.is-clicked .line:nth-child(3) {
+   top: 0;
+   height: 3px;
+   width: 22px;
+   opacity: 1;
+   position: absolute;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.icon-container.is-clicked .line:nth-child(1){
+  top: 0;
+   height: 3px;
+   width: 22px;
+   opacity: 1;
+   position: absolute;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+.icon-container.is-clicked .line03 , .icon-container.is-clicked .line01  {
+  background-color: #fff;
+  top:47px;
+  z-index: -1;
+  position: absolute;
+
+}
+
+}
+
+.navigation-wrapper {
+  background: -webkit-linear-gradient(#002a67, #0079dd); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#002a67, #0079dd); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#002a67, #0079dd); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#002a67, #0079dd); /* Standard syntax */
+/*  padding: 40px 0 0 0;
+*/  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+ /* z-index: 1000;*/
+  display: none;
+}
+
+.navigation {
+  padding: 20px 5% 0 5%;
+  display: none;
+}
+
+.show-menu {
+  display: block;
+}
+
+
+.navigation li {
+  list-style: none;
+  margin: 50px 0;
+
+} 
+.navigation li.small-padding {
+  margin: 0;
+  }
+
+.navigation li a {
+  display: block;
+  padding: 10px 0 10px 1%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 150%;
+  letter-spacing: .1em;
+  border-left: 3px solid #fff;
+   -webkit-transition: .4s linear; 
+    -moz-transition: .4s linear; 
+    transition: .4s linear;
+  opacity: 0.95;
+  -moz-transition: all ease .3s;
+  -webkit-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+.navigation li a:hover {
+  color: #fff;
+  padding-left: 5%;
+  border-left: 3px solid #eee;
+}
+
+
+.cd-header {
+  
+  top: 0%!important;
+  left: 0;
+  width:100vw;
+  z-index: 2000;
+  box-shadow: 0 -11px 2px rgba(0, 0, 0, 0.3);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ .cd-header {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .cd-header.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -60px!important;
+    background-color: rgba(0, 121, 221,.75); 
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+  .cd-header.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+@media only screen and (min-width: 1170px) and (max-width: 2000px) {
+  .cd-header {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .cd-header.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -60px!important;
+    background-color: rgba(0, 121, 221,.75); 
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+  .cd-header.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+    .cd-primary-nav-trigger {
+    width: 100px;
+   /* padding-left: 1em;*/
+    background-color: transparent;
+    height: 30px;
+    top: 80%;
+    left:90%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .cd-header.menu-is-open {
+    /* add a background color to the header when the navigation is open */
+    background-color:  #002a67 solid;
+  }
+  .icon-container.is-clicked .line:nth-child(3) {
+     top: 54px;
+   height: 3px;
+   width: 22px;
+   opacity: 1;
+   z-index: -1;
+   position: absolute;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.icon-container.is-clicked .line:nth-child(1){
+  top: 54px;
+   height: 3px;
+   width: 22px;
+   opacity: 1;
+   position: absolute;
+   z-index: -1;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+ 
+.icon-container.is-clicked .line03 , .icon-container.is-clicked .line01  {
+  background-color: #fff;
+  top:47px;
+  z-index: -1;
+  position: absolute;
+
+}
+}
+
+
+@media only screen and (min-width: 168px) {
+  .cd-header {
+    height: 60px!important;
+    background: transparent;
+    -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+    z-index: 2000;
+  }
+
+    .cd-primary-nav-trigger {
+    width: 100px;
+   /* padding-left: 1em;*/
+    background-color: transparent;
+    height: 30px;
+    top: 80%;
+    left:90%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+.nav {
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-o-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+backface-visibility: hidden;
+cursor: pointer;
+border: none;
+width: 93px;
+height: 65px;
+position: relative;
+right: -33%;
+
+}
+.nav .icon-container {
+width: 93px;
+position: absolute;
+top: 10px;
+right: 0;
+cursor: pointer;
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-o-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.icon-container.is-clicked .line03 , .icon-container.is-clicked .line01 {
+  background-color: #fff;
+  top:47px;
+  z-index: -1;
+  position: absolute;
+
+}
+}
+
+.white_logo img{
+  visibility: visible;
+  float: left;
+  margin: -38px 20px 0 20px;
+  width: 80px;
+  opacity: 1;
+  
+
+}
+
+.hidden {
+  display: none;
+}
+.show{
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-primary-nav-trigger {
+    width: 100px;
+    background-color: transparent;
+    height: 30px;
+    top: 80%;
+    left:90%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+.icon-container.is-clicked .line03, .icon-container.is-clicked .line01  {
+  background-color: #fff;
+  top:47px;
+  z-index: -1;
+  position: absolute;
+
+}
+
+}
+
+.cd-primary-nav {
+  /* by default it's hidden - on top of the viewport */
+  position: absolute;
+  top: 0;
+  margin-left: 0px;
+  height: 100vh;
+  width: 100vw;
+  background: -webkit-linear-gradient(left,#00003b, #0079dd); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left,#00003b, #0079dd); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left,#00003b, #0079dd); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right,#00003b, #0079dd); /* Standard syntax */
+  z-index:1500;
+  text-align: center;
+  padding: 50px 0;
+  opacity: .95;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.cd-primary-nav ul {
+  width: 100%;
+  left: 0;
+  margin: 3.5vw 0 0 1vw;
+}
+.cd-primary-nav li {
+  list-style-type: none;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-family: "museo_sans900";
+  font-weight: 500;
+  display: table;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 8px -17px;
+  width: 100vw;
+  vertical-align: middle;
+  
+  
+}
+.cd-primary-nav a {
+  color: #fff;
+ 
+ 
+}
+ .cd-primary-nav ul a:hover {
+  background-color: #fff;
+  width: 100vw;
+  color: #0079dd;
+  display: inline-block;
+}
+
+
+.cd-primary-nav.is-visible {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+@media only screen and (max-width: 768px){
+  .cd-primary-nav ul {
+  margin: 10% 0 0 0;
+  vertical-align: middle;
+}
+.cd-primary-nav li {
+ font-size: 38px;
+  
+}
+.cd-primary-nav ul a:hover {
+ font-size: 38px; 
+}
+.icon-container.is-clicked .line03 , .icon-container.is-clicked .line01  {
+  background-color: #fff;
+  top:47px;
+  z-index: -1;
+  position: absolute;
+
+}
+
+}
+.cd-header .is-visible .white_logo{
+    display: block;
+  }
+  .cd-header .is-visible .logo{
+    display: none;
+    
+  }
+
+/****************************************End of Nav bar****************************************/
+
+/****************************************End of Nav bar****************************************/
+/*************************WORK/Portfolio********************************/
+.wrap{
+z-index: 2;
+margin-bottom: 35vh;
+margin-top: -4%;
+background-color: #fff;
+}
+.pic_holder{
+  margin-bottom: 0%;
+  width: 100%;
+}
+.pic_holder ul li{
+  padding: 0% 0% 0% 0%;
+  position: relative;
+  overflow: hidden;
+  margin: 0% 0% 0% 0%;
+  display: inline-block;
+
+}
+ul.img-list {
+  list-style-type: none;
+  margin: 0% 0% 0% 0%;
+  padding: 0;
+  text-align: center;
+  
+}
+
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  
+}
+ 
+span.text-content span {
+  display: block;
+  
+  
+}
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 200%;
+  -webkit-transition: opacity 900ms;
+  -moz-transition: opacity 900ms;
+  -o-transition: opacity 900ms;
+  transition: opacity 900ms;
+
+}
+ 
+ul.img-list li:hover span.text-content {
+  opacity: 0.85;
+  background: -webkit-linear-gradient( left, #00003b, #0079dd) !important; /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #00003b, #0079dd) !important; /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #00003b, #0079dd) !important; /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #00003b, #0079dd) !important; /* Standard syntax */
+  
+}
+
+
+.head_name{
+  font-family: "museo_sans900";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+  word-wrap:break-word;
+  margin: 50% 5% 0% 5%;
+  text-transform: uppercase;
+  -webkit-transform: translateZ(-30px);
+-moz-transform: translateZ(-30px);
+-ms-transform: translateZ(-30px);
+-o-transform: translateZ(-30px);
+transform: translateZ(-30px);
+-webkit-transition: opacity 0.2s 0.2s, -moz-transform 0.2s 0.2s;
+-moz-transition: opacity 0.2s 0.2s, -moz-transform 0.2s 0.2s;
+transition: opacity 0.2s 0.2s, -moz-transform 0.2s 0.2s;
+-webkit-transition: opacity 0.2s 0.2s, -webkit-transform 0.2s 0.2s;
+-moz-transition: opacity 0.2s 0.2s, -webkit-transform 0.2s 0.2s;
+transition: opacity 0.2s 0.2s, -webkit-transform 0.2s 0.2s;
+-webkit-transition: opacity 0.2s 0.2s, transform 0.2s 0.2s;
+-moz-transition: opacity 0.2s 0.2s, transform 0.2s 0.2s;
+transition: opacity 0.2s 0.2s, transform 0.2s 0.2s;
+}
+
+.subhead_name{
+  margin: 0% 7% 0% 5.2%;
+}
+.show_more{
+  background-color: #002a67;
+  width: 100%;
+  height: 50px;
+  margin:0;
+  padding: 0;
+}
+.show_more h2{
+  font-family: "museo_sans900";
+  text-align: center;
+  color:#fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 2.8em;
+  margin-top: 0;
+}
+.show_more:hover{
+  background-color: #0079dd;
+}
+.clients{
+  padding-top: 75px;
+  background-color: #fff;
+  z-index:10;
+  float: none;
+}
+/*.clients h1{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 40px;
+  font-family: "museo_sans900";
+  color:#007BE1;
+  text-align: center;
+  text-transform: uppercase;
+}*/
+.clients h4{
+  color:#5C5C5C;
+  font-family: "museo900";
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  line-height:0em; 
+}
+.client_logo{
+  text-align: center;
+  margin: 0px 54px 0px 54px;
+}
+.client_logo li {
+
+border-top: 2px solid #ececec;
+padding-bottom: 2px;
+
+}
+.client_logo ul li img{
+  width: 128px;
+}
+.client_logo ul {
+  padding-bottom: 15px;
+}
+
+
+/*****************************End of Work/ Portfolio*************************/
+/*******************************FOOTER***************************************/
+
+
+.footer{
+  background-image: url(../images/footer_bck.png);
+  height: 23em;
+position: fixed;
+width: 100%;
+bottom: 0;
+z-index: -1;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+
+
+
+}
+
+.footer_logo{
+
+position: relative;
+left: 0;
+right: 0;
+margin-left: 45%;
+margin-top: 2%;
+
+
+}
+
+.footer_line{
+  margin-top: 15px;
+  margin-left: 2%;
+}
+.footer_list li{
+  float: right;
+  list-style-type: none;
+  margin-right: 66px;
+  padding-top: 10px;
+  
+}
+.footer_list li a {
+  text-decoration: none; 
+  color: #fff;
+  font-size: 11px;
+  font-family: "museo_sans900";
+}
+.footer-text h4{
+text-decoration: none;
+font-family: 'Open Sans', sans-serif;
+color: #fff;
+font-size: 12px;
+margin-left: 85px;
+margin-top: -3%;
+ 
+
+}
+@media only screen and (min-width: 768px) {
+  .footer_list li {
+    float: right;
+  list-style-type: none;
+  margin-right: 66px;
+  padding-top: 10px;
+
+  }
+  .footer-text h4{
+text-decoration: none;
+font-family: 'Open Sans', sans-serif;
+color: #fff;
+font-size: 12px;
+margin-left: 85px;
+margin-top: -3%;
+ 
+}
+.footer{
+  height: 220px;
+  width: 102%;
+}
+.footer_list{
+  float: right;
+}
+}
+@media only screen and (max-width: 768px) {
+  .footer_list li {
+    float: right;
+  list-style-type: none;
+  margin-right: 66px;
+  padding-top: 10px;
+
+  }
+  .footer-text h4{
+text-decoration: none;
+font-family: 'Open Sans', sans-serif;
+color: #fff;
+font-size: 12px;
+margin-left: 85px;
+margin-top: -3%;
+ 
+}
+.footer{
+  height: 300px;
+}
+.footer_list{
+  float: right;
+}
+}
+/*******************************End of FOOTER***************************************/
+/************************WORK-Inner**************************************/
+.work-inner{
+
+position: relative;
+bottom: 35vh;
+background-color: #fff;
+margin-top: 18%;
+
+
+}
+div.background
+{
+  background: url(../images/banner1.png) repeat;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 515px;
+  min-width:100%;
+  margin:0px;
+
+
+}
+div.transbox
+{
+   position: relative;
+   top:75%;
+   height: 27%;
+   background: rgb(6.7%,15.7%,34.9%); /* fallback color */
+   background: rgba(6.7%,15.7%,34.9%);
+  border: 1px solid black;
+  opacity:0.86;
+  filter:alpha(opacity=86); /* For IE8 and earlier */
+}
+div.transbox span
+{
+  margin: 5%;
+  font-weight: bold;
+
+}
+.transbox h5{
+    color: #fff;
+  text-align: center;
+  font-family: "museo500";
+  font-size: 18px;
+}
+.transbox h4{
+  color: #fff;
+  text-align: center;
+  font-family: "OpenSans-Italic";
+  font-size: 12px;
+  line-height: 1em;
+}
+.transbox h6{
+  text-transform: uppercase;
+  color: #F3560D;
+  text-align: center;
+  font-family: "museo_sans900";
+  font-size: 12px;
+  line-height: 0em;
+}
+
+
+#banner img{
+ min-width: 100%;
+    -webkit-background-size: cover;           /* Safari 3.0 */
+     -moz-background-size:cover;           /* Gecko 1.9.2 (Firefox 3.6) */
+       -o-background-size:cover;           /* Opera 9.5 */
+          background-size: cover;           /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+ position: relative;
+  
+}
+
+   
+   #banner  span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(6.7%,15.7%,34.9%); /* fallback color */
+   background: rgba(6.7%,15.7%,34.9%);
+   position: relative;
+}
+    
+@media only screen and (min-width: 768px) {
+
+   
+   #banner span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(6.7%,15.7%,34.9%); /* fallback color */
+   background: rgba(6.7%,15.7%,34.9%);
+ 
+}
+
+}
+.heading{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 26pt;
+  font-family: "museo_sans900";
+  color:#007BE1;
+  line-height: 0em;
+  margin-top: -2%;
+
+}
+.sub-heading{
+  color:#5C5C5C;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1em;
+  font-family: "museo500";
+  padding-bottom: 1%;
+
+}
+
+
+
+.client_thoughts{
+  
+  background-color: #F9F9F9;
+
+}
+.client_thoughts .description{
+  margin: 3% 6% 0% 15%;
+  width: 69%;
+
+}
+.description h5{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12pt;
+}
+.client_thoughts h1{
+  color:#007BE1;
+  font-family: "museo_sans900"; 
+  font-size: 16pt;
+
+}
+.client_thoughts h4{
+  color:#5C5C5C;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12pt;
+
+}
+.button{
+float: none;
+width: 120px;
+height: 30px;
+top: 0px;
+background-color: #F3560D;
+left:1%;
+}
+.button h2{
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+
+}
+.more_projects{
+  background-image: url(../images/more-projects.png);
+  width: 120%;
+  margin: 4% -3% 0% -8%;
+}
+.description h5{
+  color: #5C5C5C;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+.more_projects h1{
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-size: 20px;
+  font-family: "museo_sans900";
+  line-height: 1.5em;
+  margin-bottom: 0;
+
+}
+.hover_projects li{
+  padding: 0;
+  margin: 0;
+  top:-40px;
+  
+  
+}
+/***********************End of Work-inner****************************************/
+/******************************Contact*******************************/
+
+.contact-header h1{
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "museo_sans900";
+  color: #0079dd;
+  line-height: 0em;
+  margin-top: -2%;
+ 
+}
+
+.contact {
+  background-image: url(../images/contact_bck.png) ;
+ background-repeat: no-repeat;
+ /* background-position: 0 -24px;*/
+ /* top: 5.8%!important;*/
+  right: 0;
+  position: relative;
+  -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+  padding: 0 0 0 0;
+ top:-2%!important;
+margin-bottom: 35vh;
+}
+.contact h4{
+   text-align: center;
+  font-family: "museo500";
+  color: #fff;
+  width: 44%;
+  margin: 4% 0 0 29%;
+}
+
+.contact_form{
+  width: 59%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  margin-left: 24%;
+  margin-top: 3%;
+ }
+
+
+.formhr{
+  background-image: url(../images/hr.png);
+}
+
+.contact input{
+  background: transparent;
+  border-style: none;
+}
+
+
+::-webkit-input-placeholder {
+   font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color:#9E9E9E;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color:#9E9E9E; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color:#9E9E9E;
+}
+
+:-ms-input-placeholder {  
+   font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color:#9E9E9E;  
+}
+.last{
+  text-align: center;
+}
+
+.btn{
+  margin: -2% 1% 54px 0;
+  text-align: center;
+
+}
+
+.button.small {
+padding-top: 0.999rem;
+padding-right: 1.75rem;
+padding-bottom: 0.9999rem;
+padding-left: 1.75rem;
+font-size: 0.8125rem;
+background-color: #F3560D;
+
+
+}
+.btn h6{
+  color:#fff;
+  font-family:"museo900";
+  text-align: center;
+  margin-top: -13%;
+}
+#map-canvas {
+  width: 100%;
+  height: 70%;
+  background-color: #CCC;
+  margin-top: 30px!important;
+}
+
+/******************************End of CONTACT****************************************/
+/*****************Capabilities************************/
+
+.wrap h1{
+  font-family: "museo_sans900";
+  font-size: 36pt;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0079dd; 
+  line-height: 0;
+  margin-top: 3%;
+ 
+
+}
+.wrap h5{
+  font-family: "museo500";
+  font-size: 18pt;
+  text-align: center;
+  color: #9E9E9E;
+  line-height: 1vw;
+  margin-bottom: 1.5%;
+}
+ .capabilities ul{
+  clear: both;
+ }
+
+.capabilities ul li{
+
+overflow: hidden;
+display: inline-block;
+background-color: #002B69;
+height: 100vh;
+width: 31.99vw;
+text-align: center;
+list-style-type: none;
+/*position: relative;*/
+
+}
+.cap-list{
+  width: 25em;
+margin-right: auto;
+margin-left: auto;
+
+display: block;
+}
+
+@media only screen and (max-width: 667px) {
+  /*.capabilities ul{
+    padding-top: 6%;
+  }*/
+.capabilities ul li{
+ padding: 7% 0% 0% 2%;
+overflow: hidden;
+display: inline-block;
+background-color: #002B69;
+height: 90vh;
+width: 99vw;
+
+/*margin-bottom: 2%;
+margin-left: 5%;*/
+
+
+}
+.cap-content h2{
+  font-size: 3.3vw !important;
+
+}
+.capabilities ul li h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.5vw !important;
+   -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  text-align: center;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: 500;
+ 
+}
+.cap-content {
+padding: 0 1% !important;
+position: absolute;
+right: auto;
+left:-2%;
+top: 4%!important;
+text-align: center;
+}
+
+.cap-list p{
+
+  opacity: 0;
+  position: relative;
+  color:#fff;
+  font-size:3vw!important;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2em!important;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  margin-top:0%!important;
+  
+}
+
+.capabilities li:hover > .cap-list {
+ 
+  background-color: #00003b;
+ 
+
+}
+
+ .capabilities li:hover >.cap-list p{
+  opacity: 1;
+  left: -2%;
+  width: 20em;
+  margin-right: auto;
+  margin-left: auto;
+ 
+  
+}
+
+.capabilities li:hover > .svg-wrap{
+  opacity: 0.5;
+
+}
+
+.svg-wrap {
+
+text-align: center;
+position: relative;
+top: 4%!important;
+left:-17%;
+}
+ 
+.wrap h1{
+  font-family: "museo_sans900";
+  font-size: 5vw !important;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0079dd; 
+  line-height: 0;
+ 
+
+}
+.wrap h5{
+  font-family: "museo500";
+  font-size: 2.8vw !important;
+  text-align: center;
+  color: #9E9E9E;
+  line-height: 1.5vw !important;
+}
+
+
+
+}
+
+
+@media only screen and (min-width: 668px)and (max-width: 940px) {
+.capabilities ul li{
+ padding: 7% 0% 0% 2%;
+overflow: hidden;
+display: inline-block;
+background-color: #002B69;
+height: 96vh;
+width: 47vw;
+/*margin-bottom: 2%;
+margin-left: .8%;*/
+/*margin-right: -3.8!important%;*/
+
+}
+
+.cap-content h2{
+  font-size: 3vw !important;
+}
+.capabilities ul li h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.7vw !important;
+   -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  text-align: center;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: 500;
+ 
+}
+.cap-content {
+
+position: relative;
+top: 5%!important;
+padding: 0 3% !important;
+left:-1%;
+}
+
+.cap-list p{
+
+  opacity: 0;
+  position: relative;
+  color:#fff;
+  font-size:1.5vw;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 3.5em;
+   margin-top:0%!important;
+  width: 45vw!important;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+
+
+}
+.capabilities-wrap{
+ margin: 1.5% 1.5% 0% 2.7% !important;
+}
+
+.capabilities li:hover > .cap-list {
+ 
+  background-color: #00003b;
+
+}
+
+ .capabilities li:hover >.cap-list p{
+  opacity: 1;
+
+  
+}
+
+.capabilities li:hover > .svg-wrap{
+  opacity: 0.5;
+
+}
+
+.svg-wrap {
+
+text-align: center;
+position: relative;
+top: 5%!important;
+left: -18%;
+}
+.wrap h1{
+  font-family: "museo_sans900";
+  font-size: 4vw !important;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0079dd; 
+  line-height: 0;
+ 
+
+}
+.wrap h5{
+  font-family: "museo500";
+  font-size: 2.2vw !important;
+  text-align: center;
+  color: #9E9E9E;
+  line-height: 1.5vw !important;
+}
+.menu-full{
+ margin-right: 12px;
+}
+}
+
+/********************End of media query for (min-width: 668px)and (max-width: 968px)**********************/
+@media only screen and (min-width: 941px)and (max-width: 1500px) {
+  .svg-wrap {
+
+text-align: center;
+position: relative;
+top: 5%!important;
+left: -2%!important;
+}
+.cap-list p{
+  display: block;
+  right: auto;
+  left: auto;
+  width: 20.5em;
+}
+}
+
+
+
+
+
+
+.capabilities-wrap{
+ 
+margin-left: 2.3%;
+overflow: hidden;
+}
+.svg-wrap{
+
+text-align: center;
+position: relative;
+top: 15%;
+}
+.capabilities ul li h2 {
+  font-family: "museo_sans900";
+  font-size: 2vw;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.capabilities ul li h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25vw;
+   -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  text-align: center;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: 500;
+ 
+}
+.cap-content{
+  text-align: center;
+  position: relative;
+  top: 15%;
+  padding-left:3%;
+  padding-right: 3%;
+
+}
+
+.cap-list p{
+  opacity: 0;
+  position: relative;
+  color:#fff;
+  font-size:1.5vw;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  padding-left: 2%;
+
+
+
+}
+.capabilities li:hover > .cap-list {
+ 
+  background-color: #00003b;
+  
+ 
+
+}
+
+ .capabilities li:hover >.cap-list p{
+  opacity: 1;
+  top:30%;
+  
+}
+
+.capabilities li:hover > .svg-wrap{
+  opacity: 0.5;
+
+}
+ 
+.cap-list  p:nth-of-type(1){
+     -webkit-transition-delay:0.3s;
+  -moz-transition-delay:0.3s;
+  transition-delay:0.3s;
+  }
+.cap-list p:nth-of-type(2){
+
+   
+  -webkit-transition-delay:0.6s;
+  -moz-transition-delay:0.6s;
+  transition-delay:0.6s;
+}
+.cap-list p:nth-of-type(3){
+    -webkit-transition-delay:0.9s;
+  -moz-transition-delay:0.9s;
+  transition-delay:0.9s;
+}
+.cap-list p:nth-of-type(4){
+  
+    
+  -webkit-transition-delay:1.2s;
+  -moz-transition-delay:1.2s;
+  transition-delay:1.2s;
+}
+.cap-list p:nth-of-type(5){
+
+    
+  -webkit-transition-delay:1.5s;
+  -moz-transition-delay:1.5s;
+  transition-delay:1.5s;
+}
+.cap-list p:nth-of-type(6){
+  
+    -webkit-transition-delay:1.8s;
+  -moz-transition-delay:1.8s;
+  transition-delay:1.8s;
+}
+.cap-list p:nth-of-type(7){
+
+   -webkit-transition-delay:2.1s;
+  -moz-transition-delay:2.1s;
+  transition-delay:2.1s;
+}
+
+.capabilities li:hover >.cap-content {
+  display: none;
+}
+/*.capabilities li:hover >.list li {
+  display: -webkit-flex; /* Safari */
+    /*-webkit-flex-direction: row-reverse;  Safari 6.1+ 
+    display: flex;
+    flex-direction: row-reverse;
+  padding: 3% 4% 5% 6%;
+  position:relative;
+}
+*/
+
+
+/************************SVG************************/
+
+/*****************************SVG**************************/
+
+.tech {
+  fill: transparent;
+  stroke: #007BE1;
+}
+
+@-webkit-keyframes tech {
+  0% {
+    stroke-dasharray:0 790;
+  }
+  100% {
+    stroke-dasharray:790 0;
+  }
+
+}
+@-moz-keyframes tech {
+  0% {
+    stroke-dasharray:0 790;
+  }
+  100% {
+    stroke-dasharray:790 0;
+  }
+  
+}
+
+
+.tech {
+  -webkit-animation: tech  7s;
+  animation: tech 7s ;
+   -moz-animation: tech  7s;
+}
+
+
+@-webkit-keyframes reset {
+  0%{ stroke-dasharray:0 790;}
+  100%{stroke-dasharray:790 0;}
+}
+
+
+.capabilities li:hover{
+  opacity: .88;
+  background-color: #00003b;
+  animation: reset 7s .1;
+  -webkit-animation: reset 7s .1 ;
+
+}
+
+.social {
+  fill: transparent;
+  stroke: #007BE1;
+}
+
+@-webkit-keyframes social {
+  0% {
+    stroke-dasharray:0 790;
+  }
+  100% {
+    stroke-dasharray:790 0;
+  }
+}
+
+
+.social {
+  -webkit-animation: social  7s;
+  animation: social 7s ;
+}
+
+.strat {
+  fill: transparent;
+  stroke: #007BE1;
+}
+
+@-webkit-keyframes strat {
+  0% {
+    stroke-dasharray:0 790;
+  }
+  100% {
+    stroke-dasharray:790 0;
+  }
+}
+
+
+.strat {
+  -webkit-animation: strat  7s;
+  animation: strat 7s ;
+}
+
+
+.spiral {
+  fill: transparent;
+  stroke: #007BE1;
+}
+
+@-webkit-keyframes spiral {
+  0% {
+    stroke-dasharray:0 502.45;
+  }
+  100% {
+    stroke-dasharray:502.45 0;
+  }
+}
+
+
+.spiral {
+  -webkit-animation: spiral  2s;
+  animation: spiral 2s ;
+}
+
+
+.design {
+  fill: transparent;
+  stroke: #007BE1;
+}
+
+@-webkit-keyframes design {
+  0% {
+    stroke-dasharray:0 790;
+  }
+  100% {
+    stroke-dasharray:709 0;
+  }
+}
+
+
+.design {
+  -webkit-animation: design  7s;
+  animation: design 7s ;
+}
+
+
+
+
+.media {
+  fill: transparent;
+  stroke: #007BE1;
+}
+
+@-webkit-keyframes media {
+  0% {
+    stroke-dasharray:0 790;
+  }
+  100% {
+    stroke-dasharray:709 0;
+  }
+}
+
+
+.media {
+  -webkit-animation: media  7s;
+  animation: media 7s ;
+}
+
+/*****************************End of SVG**************************/
+@media only screen and (max-width: 960px) {
+  #Layer_1 {
+      width: 150px;
+      /*height: 150px;*/
+      margin: 1% 2% 4% 30%;
+     /* vertical-align: middle;*/
+
+     
+      
+  }
+
+
+  
+
+/*************************End of Capabilities*************************/
