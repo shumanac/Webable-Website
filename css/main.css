@@ -979,7 +979,7 @@ backface-visibility: hidden;
 
 .cd-primary-nav {
   /* by default it's hidden - on top of the viewport */
-  position: absolute;
+  position: fixed;
   top: 0;
   margin-left: 0px;
   height: 100vh;
@@ -994,7 +994,7 @@ backface-visibility: hidden;
   opacity: .95;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  overflow: hidden;
+  /*overflow: hidden;*/
   /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
   -webkit-overflow-scrolling: touch;
   -webkit-transform: translateY(-100%);
