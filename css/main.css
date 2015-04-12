@@ -160,7 +160,7 @@ border: none;
 width: 93px;
 height: 65px;
 position: relative;
-right: 2%;
+right: 36%;
 
 }
 .nav .icon-container {
@@ -842,7 +842,7 @@ transition: all 0.3s;
    height: 3px;
    width: 22px;
    opacity: 1;
-   z-index: -1;
+
    position: absolute;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -856,7 +856,7 @@ transition: all 0.3s;
    width: 22px;
    opacity: 1;
    position: absolute;
-   z-index: -1;
+
   -webkit-transform: rotate(225deg);
   -moz-transform: rotate(225deg);
   -ms-transform: rotate(225deg);
@@ -867,14 +867,14 @@ transition: all 0.3s;
 .icon-container.is-clicked .line03 , .icon-container.is-clicked .line01  {
   background-color: #fff;
   top:47px;
-  z-index: -1;
+
   position: absolute;
 
 }
 }
 
+@media only screen and (min-width: 68px) and (min-width:670px){
 
-@media only screen and (min-width: 168px) {
   .cd-header {
     height: 60px!important;
     background: transparent;
@@ -1293,11 +1293,23 @@ font-family: 'Open Sans', sans-serif;
 color: #fff;
 font-size: 12px;
 margin-left: 85px;
-margin-top: -3%;
+margin-top: -3%!important;
  
 
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) and (min-width: 800px){
+
+  .footer-text h4{
+text-decoration: none;
+font-family: 'Open Sans', sans-serif;
+color: #fff;
+font-size: 12px;
+margin-left: 85px;
+margin-top: 1%;
+ 
+}
+}
+@media only screen and (min-width: 768px)  {
   .footer_list li {
     float: right;
   list-style-type: none;
@@ -1305,13 +1317,14 @@ margin-top: -3%;
   padding-top: 10px;
 
   }
+
   .footer-text h4{
 text-decoration: none;
 font-family: 'Open Sans', sans-serif;
 color: #fff;
 font-size: 12px;
 margin-left: 85px;
-margin-top: -3%;
+margin-top: 1%;
  
 }
 .footer{
@@ -1321,22 +1334,32 @@ margin-top: -3%;
 .footer_list{
   float: right;
 }
+.footer img{
+  display: block;
+  top:5em;
+}
+
 }
 @media only screen and (max-width: 768px) {
+  .footer img{
+    display: list-item;
+    top:5em;
+  }
   .footer_list li {
-    float: right;
+  float: left;
   list-style-type: none;
   margin-right: 66px;
   padding-top: 10px;
 
   }
+
   .footer-text h4{
 text-decoration: none;
 font-family: 'Open Sans', sans-serif;
 color: #fff;
 font-size: 12px;
 margin-left: 85px;
-margin-top: -3%;
+margin-top: 1%;
  
 }
 .footer{
@@ -1344,6 +1367,13 @@ margin-top: -3%;
 }
 .footer_list{
   float: right;
+}
+.footer img{
+
+  top:6em;
+}
+.footer_line{
+ margin-top: 7em;
 }
 }
 /*******************************End of FOOTER***************************************/
